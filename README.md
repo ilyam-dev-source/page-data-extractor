@@ -1,15 +1,16 @@
-﻿# page-data-extractor
+# page-data-extractor
 
-Small Python portfolio project for extracting structured records from simple HTML job-card pages.
+A small Python utility for extracting structured records from simple HTML job-card pages.
 
-This project is intentionally small. It demonstrates:
+**Status: completed educational utility.**
 
-- parsing HTML with the Python standard library;
-- extracting title, link, and summary fields;
-- normalizing text;
-- resolving relative links against a base URL;
-- exporting structured data to JSON and CSV;
-- testing parser and output behavior with `unittest`.
+## What it demonstrates
+
+- Parsing HTML with the Python standard library.
+- Extracting title, link, and summary fields.
+- Normalizing text and resolving relative links against a base URL.
+- Exporting structured data to JSON and CSV.
+- Testing parser and output behavior with `unittest`.
 
 It is not a production scraper and does not bypass access controls, paywalls, CAPTCHAs, or robots policies.
 
@@ -27,7 +28,6 @@ python -m page_data_extractor.cli examples\sample_jobs.html --base-url https://e
 
 Create the `out` directory first if it does not exist.
 
-## Why this exists
+## Scope
 
-The project is meant as a more relevant support artifact for web scraping / data extraction freelance applications than a general C CLI project.
-
+This compact utility is a support artifact for web data extraction and automation applications, rather than a production scraping system.
